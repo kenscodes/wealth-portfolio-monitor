@@ -1,8 +1,8 @@
-# 📊 Private Wealth Portfolio Health Monitor
+# Private Wealth Portfolio Health Monitor
 
-A production-grade portfolio analysis tool that monitors holdings health, benchmarks performance against the S&P 500, surfaces risk signals, and exports structured data for Power BI dashboards.
+A production-grade portfolio analysis tool that monitors holdings health, benchmarks performance against the S&P 500, surfaces risk signals, and exports structured data for Tableau dashboards.
 
-**Built to simulate the kind of portfolio health visibility a Private Wealth advisor at a firm like Goldman Sachs would need** — combining quantitative rigour with actionable advisor-ready insights.
+Built to provide comprehensive portfolio health visibility, combining quantitative rigor with actionable, data-driven insights.
 
 ---
 
@@ -11,11 +11,11 @@ A production-grade portfolio analysis tool that monitors holdings health, benchm
 | # | Metric | Description |
 |---|--------|-------------|
 | 1 | **Cumulative Returns** | Compounded returns vs SPY benchmark over 2 years |
-| 2 | **Sharpe Ratio** | Risk-adjusted return per unit of volatility (annualised) |
+| 2 | **Sharpe Ratio** | Risk-adjusted return per unit of volatility (annualized) |
 | 3 | **Max Drawdown** | Largest peak-to-trough decline — measures downside risk |
 | 4 | **Portfolio Beta** | Systematic risk relative to S&P 500 |
 | 5 | **Allocation Drift** | Actual vs target sector weights with 5% drift flags |
-| 6 | **Portfolio Health Score** | Composite score from normalised Sharpe, drawdown, and drift |
+| 6 | **Portfolio Health Score** | Composite score from normalized Sharpe, drawdown, and drift |
 
 ---
 
@@ -25,18 +25,8 @@ A production-grade portfolio analysis tool that monitors holdings health, benchm
 - **yfinance** — real-time and historical market data
 - **Pandas & NumPy** — data manipulation and quantitative computation
 - **Plotly** — interactive charts in Jupyter
-- **Matplotlib & Seaborn** — static visualisations (fallback)
-- **Power BI** — dashboard layer (CSV imports)
-
----
-
-## Key Findings
-
-> _Populated after running the analysis notebook_
-
-- 🔹 *[Finding 1 — e.g. Portfolio returned X% vs SPY's Y% over 2 years]*
-- 🔹 *[Finding 2 — e.g. Technology sector is overweight by Z%, recommend trimming]*
-- 🔹 *[Finding 3 — e.g. Portfolio Sharpe of N indicates risk-adjusted performance]*
+- **Matplotlib & Seaborn** — static visualizations (fallback)
+- **Tableau** — interactive dashboard visualization
 
 ---
 
@@ -69,10 +59,10 @@ Run all cells sequentially. The notebook will:
 - Generate interactive Plotly charts
 - Export 4 CSVs to the `data/` folder
 
-### 3. Open Power BI Dashboard
-1. Open Power BI Desktop
+### 3. Open Tableau Dashboard
+1. Open Tableau
 2. Import the 4 CSVs from `data/`
-3. Follow the dashboard setup instructions in the notebook's final cell
+3. Connect the data sources to visualize the metrics and allocation drift.
 
 ---
 
