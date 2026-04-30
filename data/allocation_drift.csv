@@ -1,0 +1,7 @@
+sector,target_pct,actual_pct,drift_pct,flag
+Technology,40.00,34.60,-5.40,Under
+Financials,15.00,14.22,-0.78,OK
+Commodities,10.00,9.63,-0.37,OK
+Fixed Income,20.00,8.42,-11.58,Under
+Broad Market,10.00,24.02,14.02,Over
+Healthcare,5.00,9.10,4.10,OK
