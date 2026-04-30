@@ -26,9 +26,7 @@ def _ensure_data_dir() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
-# ---------------------------------------------------------------------------
 # POWER BI EXPORT — Daily Returns
-# ---------------------------------------------------------------------------
 
 def export_daily_returns(
     daily_returns: pd.DataFrame,
@@ -68,9 +66,7 @@ def export_daily_returns(
     return str(path)
 
 
-# ---------------------------------------------------------------------------
 # POWER BI EXPORT — Portfolio Summary
-# ---------------------------------------------------------------------------
 
 def export_portfolio_summary(
     holdings: pd.DataFrame,
@@ -112,9 +108,7 @@ def export_portfolio_summary(
     return str(path)
 
 
-# ---------------------------------------------------------------------------
 # POWER BI EXPORT — Allocation Drift
-# ---------------------------------------------------------------------------
 
 def export_allocation_drift(drift_df: pd.DataFrame) -> str:
     """
@@ -137,9 +131,7 @@ def export_allocation_drift(drift_df: pd.DataFrame) -> str:
     return str(path)
 
 
-# ---------------------------------------------------------------------------
 # POWER BI EXPORT — Cumulative Returns
-# ---------------------------------------------------------------------------
 
 def export_cumulative_returns(
     cumulative_returns: pd.DataFrame,

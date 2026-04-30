@@ -10,9 +10,7 @@ Modelled after the kind of structured portfolio definition a
 Goldman Sachs PWM advisor would maintain for a high-net-worth client.
 """
 
-# ---------------------------------------------------------------------------
 # Client Portfolio Holdings
-# ---------------------------------------------------------------------------
 # Each entry: ticker → {shares held, average purchase price, sector}
 
 PORTFOLIO = {
@@ -26,9 +24,7 @@ PORTFOLIO = {
     'JNJ':  {'shares': 35,  'purchase_price': 160.00,  'sector': 'Healthcare'},
 }
 
-# ---------------------------------------------------------------------------
 # Target Sector Allocation (must sum to 1.0)
-# ---------------------------------------------------------------------------
 
 TARGET_ALLOCATION = {
     'Technology':   0.40,
@@ -39,9 +35,7 @@ TARGET_ALLOCATION = {
     'Healthcare':   0.05,
 }
 
-# ---------------------------------------------------------------------------
 # Benchmark & Analysis Parameters
-# ---------------------------------------------------------------------------
 
 BENCHMARK_TICKER = 'SPY'       # S&P 500 ETF as benchmark
 ANALYSIS_PERIOD  = '2y'        # 2 years of historical data

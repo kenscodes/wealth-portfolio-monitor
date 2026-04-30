@@ -27,9 +27,7 @@ import pandas as pd
 import yfinance as yf
 
 
-# ---------------------------------------------------------------------------
 # 1. Price Data Fetch
-# ---------------------------------------------------------------------------
 
 def fetch_price_data(tickers: list[str], period: str, benchmark: str = 'SPY') -> pd.DataFrame:
     """
@@ -64,9 +62,7 @@ def fetch_price_data(tickers: list[str], period: str, benchmark: str = 'SPY') ->
     return prices
 
 
-# ---------------------------------------------------------------------------
 # 2. Daily Returns
-# ---------------------------------------------------------------------------
 
 def calculate_daily_returns(price_data: pd.DataFrame) -> pd.DataFrame:
     """
@@ -86,9 +82,7 @@ def calculate_daily_returns(price_data: pd.DataFrame) -> pd.DataFrame:
     return returns
 
 
-# ---------------------------------------------------------------------------
 # 3. Cumulative Returns
-# ---------------------------------------------------------------------------
 
 def calculate_cumulative_returns(daily_returns: pd.DataFrame) -> pd.DataFrame:
     """
@@ -110,9 +104,7 @@ def calculate_cumulative_returns(daily_returns: pd.DataFrame) -> pd.DataFrame:
     return cumulative
 
 
-# ---------------------------------------------------------------------------
 # 4. Portfolio Value
-# ---------------------------------------------------------------------------
 
 def calculate_portfolio_value(
     price_data: pd.DataFrame,
@@ -168,9 +160,7 @@ def calculate_portfolio_value(
     }
 
 
-# ---------------------------------------------------------------------------
 # 5. Sharpe Ratio
-# ---------------------------------------------------------------------------
 
 def calculate_sharpe_ratio(
     daily_returns: pd.DataFrame,
@@ -226,9 +216,7 @@ def calculate_sharpe_ratio(
     return sharpe
 
 
-# ---------------------------------------------------------------------------
 # 6. Max Drawdown
-# ---------------------------------------------------------------------------
 
 def calculate_max_drawdown(cumulative_returns: pd.DataFrame) -> dict:
     """
@@ -253,9 +241,7 @@ def calculate_max_drawdown(cumulative_returns: pd.DataFrame) -> dict:
     return {col: round(val * 100, 2) for col, val in max_dd.items()}
 
 
-# ---------------------------------------------------------------------------
 # 7. Allocation Drift
-# ---------------------------------------------------------------------------
 
 def calculate_allocation_drift(
     price_data: pd.DataFrame,
@@ -316,9 +302,7 @@ def calculate_allocation_drift(
     return pd.DataFrame(rows)
 
 
-# ---------------------------------------------------------------------------
 # 8. Portfolio Beta
-# ---------------------------------------------------------------------------
 
 def calculate_portfolio_beta(
     portfolio_returns: pd.Series,
@@ -350,9 +334,7 @@ def calculate_portfolio_beta(
     return round(beta, 4)
 
 
-# ---------------------------------------------------------------------------
 # Helper: Weighted Portfolio Returns
-# ---------------------------------------------------------------------------
 
 def compute_portfolio_returns(
     daily_returns: pd.DataFrame,

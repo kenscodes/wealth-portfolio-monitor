@@ -40,6 +40,12 @@ A production-grade portfolio analysis tool that monitors holdings health, benchm
 
 ---
 
+## Live Dashboard
+
+[View the interactive Tableau Dashboard here](https://public.tableau.com/app/profile/shashank.kanojiya1043/viz/PWMWealthPortfolioMonitor/PrivateWealthPortfoliohealthMonitor)
+
+---
+
 ## Screenshots
 
 ![Portfolio Analysis Dashboard](assets/portfolio_analysis.png)
